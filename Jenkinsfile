@@ -14,7 +14,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "====++++Test Successful++++===="
-                bat sh 'python -m unittest'
+                bat 'python -m unittest'
             }
         }
 
