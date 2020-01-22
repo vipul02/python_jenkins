@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "====++++Building Successful++++===="
-                bat 'python --version'
+                sh 'python --version'
                 
             }
         }
@@ -14,7 +14,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo "====++++Test Successful++++===="
-                bat 'python -m unittest'
+                sh 'python -m unittest'
             }
         }
 
