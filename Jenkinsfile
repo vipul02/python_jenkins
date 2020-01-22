@@ -1,6 +1,13 @@
 pipeline {
     agent any
     stages {
+
+        stage('Check') {
+            steps {
+                echo "====++++Checking Successful++++===="
+            }
+        }
+
         stage('Build') {
             steps {
                 echo "====++++Building Successful++++===="
